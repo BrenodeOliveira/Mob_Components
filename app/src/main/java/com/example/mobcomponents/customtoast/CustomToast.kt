@@ -43,6 +43,16 @@ object CustomToast {
         )
     }
 
+    fun info(activity: Activity, message: String) {
+        showToast(
+            activity,
+            ContextCompat.getDrawable(activity,
+                R.drawable.toast_bg_info),
+            ContextCompat.getDrawable(activity, R.drawable.ic_info),
+            message
+        )
+    }
+
     fun default(activity: Activity, message: String) {
         showToast(
             activity,
